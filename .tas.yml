@@ -10,8 +10,7 @@ preMerge:
     - "./bin/nanoid.test.js"
 preRun:
   command:
-    - npm i -g pnpm
-    - pnpm install --shamefully-hoist
+    - npx pnpm install --shamefully-hoist
 postRun:
   command:
     - pnpm --version
