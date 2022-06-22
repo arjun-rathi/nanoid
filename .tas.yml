@@ -10,7 +10,7 @@ preMerge:
     - "./bin/nanoid.test.js"
 preRun:
   command:
-    - npx pnpm install --frozen-lockfile --ignore-scripts
+    - npx pnpm install --frozen-lockfile --ignore-scripts --shamefully-hoist
 postRun:
   command:
     - pnpm --version
