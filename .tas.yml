@@ -9,9 +9,10 @@ preMerge:
     - "./test/*.test.js"
     - "./bin/nanoid.test.js"
 preRun:
-     command:
-        - yarn install
+  command:
+    - npm i -g pnpm
+    - pnpm install --shamefully-hoist
 postRun:
-     command:
-        - yarn --version
+  command:
+    - pnpm --version
 version: 1.0
